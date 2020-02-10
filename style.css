@@ -1,4 +1,39 @@
+/*COLORS*/
+/*
+LIGHT Indigo: #536dfe rgb(83, 109, 254) (equivalent van #5d5fb6)
+MEDIUM Indigo: #3d5afe rgb(61, 90, 254) (equivalent van #47498c)
+Dark Indigo: #304ffe rgb(48, 79, 254)
+
+BACKGROUND INDIGO: #677EFE
+
+
+
+
+ORIGINELE FORM KLEUREN
+    --shadow-normal: .5rem .5rem 1.5rem #47498c,
+                                -.5rem -.5rem 1.5rem #5d5fb6;
+    --shadow-inset: inset .5rem .5rem 1.5rem #47498c,
+                                inset -.5rem -.5rem 1.5rem #5d5fb6;
+
+    --background-color: linear-gradient(145deg, #585aac, #4a4c91);
+*/
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre&display=swap');
+
+/*CSS VARIABLES*/
+:root {
+    --shadow-normal: .5rem .5rem 1.5rem #47498c,
+                                -.5rem -.5rem 1.5rem #5d5fb6;
+    --shadow-inset: inset .5rem .5rem 1.5rem #47498c,
+                                inset -.5rem -.5rem 1.5rem #5d5fb6;
+
+    --background-color: linear-gradient(145deg, #585aac, #4a4c91);
+}
+
+/* ----------------------- */
+/* GLOBAL RESET */
 
 *,
 *::before,
@@ -13,28 +48,35 @@ html {
 }
 
 section {
-    padding: 3rem
+    padding: 1rem 3rem;
 }
 
-
-/*NAVBAR*/
+/* ------------ */
+/* NAVBAR */
 
 .navbar {
     text-transform: uppercase;
-    background-color: rgba(49, 24, 131, .9) !important;
-    border-color: rgba(49, 24, 131, .9);
+    background-color: rgba(61, 90, 254, .9) !important;
+    border-color: rgba(61, 90, 254, .9);
 }
 
-/*HERO*/
+/* ------------ */
+/* HERO */
+
 .hero {
     width: 100%;
-    height: 70vh;
-    background: linear-gradient(135deg, rgba(49, 24, 131, .9) 0%, rgba(72, 56, 149, .8) 100%), url('img/neonbrand.jpg') center no-repeat;
+    height: 50vh;
+    background: linear-gradient(135deg, rgba(48, 79, 254, .9) 0%, rgba(61, 90, 254, .8) 100%), url('img/neonbrand.jpg') center no-repeat;
     background-size: cover;
     position: relative;
 }
 
-
+@media only screen and (max-width: 700px) {
+    .hero {
+        height: 70vh;
+    }
+    
+}
 
 .main-message {
     width: 100%;
@@ -55,7 +97,7 @@ section {
 }
 
 .btn {
-    background-color: rgba(49, 24, 131);
+    background-color: #304ffe;
     border-radius: 2rem;
     color: #fafafa;
     display: inline-block;
@@ -66,25 +108,32 @@ section {
 }
 
 .btn:hover {
-    background-color: rgba(55, 8, 209, 0.9);
+    background-color: #536dfe;
         color: #fafafa;
 
 }
 
+/* ----------------------- */
+/* NAME SECTION */
 
-/* NAME */
 
+/* ----------------------------------------- */
+/* NAVIGATION TABS: WHY b2B and HOW IT WORKS */
 
-/*Offer*/
+.tabnav {
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+/* ------------- */
+/* OFFER SECTION */
 
 .heading-underline {
     width: 3rem;
     height: .2rem;
-    background-color: #1ebba3;
+    background-color: #3d5afe;
     margin: 0 auto;
 }
-
-/**/
 
 .content-4 .nav{
     justify-content: center;
@@ -113,7 +162,7 @@ section {
     width: 100%;
 }
 .content-4 .tab-item.active{
-    color: #EF233C;
+    color: #3d5afe;
 }
 
 .tab-content{
@@ -121,9 +170,136 @@ section {
     transition: all 400ms ease;
 }
 
-/*NAVIGATION TABS: WHY b2B and HOW IT WORKS*/
+/* ----------------------- */
+/* FORM SECTION */
 
-.tabnav {
-    font-size: 2rem;
-    justify-content: space-around;
+#cta {
+    background-image: var(--background-color);
+    height: 990px;
 }
+
+.cta-text {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.center-content {
+    width: 100%;
+    height: 30vh;
+    /*There is an easier way to center content in the very center of a page, then just using align-items and justify-content: with MARGIN-AUTO*/
+    display: flex;
+    padding: 0 1.5rem;
+    padding-top: 3rem;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 50rem;
+    background-image: var(--background-color);
+    padding: 3.5rem;
+    margin: auto;
+    border-radius: .8rem;
+    box-shadow: var(--shadow-normal);
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    color: #ddd;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-inset);
+    margin-bottom: 1.5rem;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+        box-shadow: .5rem .5rem 1.5rem #47498c,
+    -.5rem -.5rem 1.5rem #5d5fb6;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ddd;
+}
+
+.center-content .form-container .input-group {
+    display: flex;
+}
+
+.input-group input:first-child {
+    margin-right: 3.5rem;
+}
+
+.button {
+    width: 100%;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ddd;
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-normal);
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: var(--shadow-inset);
+}
+
+/*Form media queries*/
+
+@media screen and (max-width: 600px) {
+    .input-group {
+        display: block;
+    }
+
+    .input-group input:first-child {
+        margin-right: 0;
+    }
+}
+
+
+/* ------ */
+/* FOOTER */
+
+#footer {
+    height: 200px;
+}
+
+.footer-icon {
+    font-size: 2rem;
+    color: #3d5afe;
+    padding: 5% 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

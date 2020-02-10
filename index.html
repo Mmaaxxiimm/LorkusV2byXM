@@ -11,6 +11,8 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
 
     <!-- Custom Css for Style, Animation, and Responsiveness -->
     <link rel="stylesheet" href="style.css">
@@ -33,13 +35,13 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Why b2b</a>
+        <a class="nav-link" href="#why">Why b2b</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Offer</a>
+        <a class="nav-link" href="#offer">Offer</a>
       </li>
     </ul>
   </div>
@@ -63,14 +65,14 @@
 <!-- ABOUT ME SECTION -->
 <!-- just 12 on small screen, but on big screens only 4 each and then offset by 2 left and right (=12) -->
   
-<section class="alain">
+<section class="alain" id="about">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12 text-center">
                 <img class="img-fluid" src="img/owner-portrait-4.jpg" alt="alain">
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-4 offset-md-2 col-sm-12 pt-5">
-                <h2 class="text-success">Alain Surkol</h2>
+                <h2 class="text-primary">Alain Surkol</h2>
                 <h4>experienced coach</h4>
                 <p>Today, I am Head of Sales Excellence at bpost. For 24 years I’ve been working for bpost, a company acting in constantly changing market conditions.
                 </p>
@@ -110,41 +112,38 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
 
         <!-- PART 1: WHY b2b and HOW IT WORKS -->
 
-<div class="container">
-    <!-- <h3 class="heading text-center">How it works</h3>
-    <div class="heading-underline"></div>
-    
-    -->
-    
+<section id="why">
+<div class="container"> 
     <div class="row">
        <div class="col-lg-8 offset-lg-2 pt-4">
-       
         <ul class="nav nav-pills mb-3 tabnav" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Why b2b?</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">How it works</a>
-  </li>
-</ul>
+          <li class="nav-item">
+                <a class="nav-link active text-uppercase" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Why b2b?</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link text-uppercase" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">How it works</a>
+          </li>
+        </ul>
+
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
       <p>
-            How B2B can help:
-Do you want to change the mind-set of your team? Or do you wish to prepare your organization for change? Don’t look any further, b2b is your partner! 
+            How b2b can help:
+            Do you want to change the mind-set of your team? Or do you wish to prepare your organization for change? Don’t look any further, b2b is your partner! 
         </p>
         <p>
            b2b (better2best) provides trainings, workshops and lectures inspiring your team, your company or your audience to do better every day so that they can become the best in the long run.
         </p>
         <p>
-            []How to show more leadership as an individual? 
-[]How to improve collaboration? 
-[]How to be ready as a team for the big change? 
-I’d love to tell you. You’ve come to the right address. Interested in a training or lecture? Well, just continue reading… 
+            <span>How to show more leadership as an individual?</span>
+            <span>How to improve collaboration?</span>
+            <span>How to be ready as a team for the big change?</span>
+            
+            I’d love to tell you. You’ve come to the right address. Interested in a training or lecture? Well, just continue reading… 
         </p>
   </div>
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-<p>
+        <p>
             We offer x modules devided into 3 themes (I, you and i, we). Modules can also be choosen a la carte. We will always make sure the combination makes an interesting story. This story is brought to you either as a training (including workshop on ‘how to deal with the learnings in practive’) or as a lecture/keynote.
         </p>
         <p>
@@ -171,12 +170,12 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
     </div>
     
 </div>
-  
+  </section>
 <!-- CTA SECTION -->
 
 
 <div class="container">
-    <div class="cta text-center">
+    <div class="cta text-center mb-3">
                 <a href="#footer" class="btn button-warning">Book me</a>
     </div>
 </div>
@@ -184,9 +183,9 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
        
        
         <!-- PART 2: OFFERING/MODULES SECTION -->   
-<section>       
+<section id="offer">       
 <div class="container">
-    <h3 class="heading text-center">Offer</h3>
+    <h3 class="heading text-center text-uppercase">Offer</h3>
     <div class="heading-underline"></div>
 </div>
 <div class="container">
@@ -228,19 +227,19 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
                                 We ask ourselves the following questions: What makes me tick? Why am I who I am? Why do I behave in a certain way? Why do I have my own outlook on things? What are my habits? How do I discover new insights?
                             </p>
                             <p>
-                                * mood – Why did everything work out yesterday, but no longer today? Are you aware of the impact of your mood? 
+                                <span class="text-uppercase font-weight-bold">Mood</span> – Why did everything work out yesterday, but no longer today? Are you aware of the impact of your mood? 
                             </p>
                             <p>
-                                * energy – How does one arouse that spark of team-spirit? How to create positive energy among others? Did you know that the key is your own energy level? 
+                                <span class="text-uppercase font-weight-bold">Energy</span> – How does one arouse that spark of team-spirit? How to create positive energy among others? Did you know that the key is your own energy level? 
                             </p>
                             <p>
-                                * win-win – Does someone else always have to lose so that you can win? Not all the time. What other alternatives are there? 
+                                <span class="text-uppercase font-weight-bold">Win-win</span> – Does someone else always have to lose so that you can win? Not all the time. What other alternatives are there? 
                             </p>
                             <p>
-                                * filters – Why does my colleague see things differently? Maybe he or she creates her own reality? Or maybe it’s you? 
+                                <span class="text-uppercase font-weight-bold">Filters</span> – Why does my colleague see things differently? Maybe he or she creates her own reality? Or maybe it’s you? 
                             </p>
                             <p>
-                                * focus – Why aren’t you as effective or creative as you would like to be? Perhaps it’s because you get easily distracted? 
+                                <span class="text-uppercase font-weight-bold">Focus</span> – Why aren’t you as effective or creative as you would like to be? Perhaps it’s because you get easily distracted? 
                             </p>
 
                         </div>
@@ -262,16 +261,16 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
                         </div>
                         <div class="col-md-4">
                             <p>
-                                * curiosity - How to adopt a curious attitude? Did you know that curiosity is the key to new innovative thinking and ideas?
+                                <span class="text-uppercase font-weight-bold">Curiosity</span> - How to adopt a curious attitude? Did you know that curiosity is the key to new innovative thinking and ideas?
                             </p>
                             <p>
-                                * feedback – People want feedback about how they are doing and what they can improve. But how do you handle that? How to best motivate others?
+                                <span class="text-uppercase font-weight-bold">Feedback</span> – People want feedback about how they are doing and what they can improve. But how do you handle that? How to best motivate others?
                             </p>
                             <p>
-                                * role model – How do we influence the people that surround us? Are you modelling the behaviour you promote? And does this translate itself in your actions?
+                                <span class="text-uppercase font-weight-bold">Role model</span> – How do we influence the people that surround us? Are you modelling the behaviour you promote? And does this translate itself in your actions?
                             </p>
                             <p>
-                                * listening – You think you are a good listener? Perhaps, some of your co-workers say otherwise?
+                                <span class="text-uppercase font-weight-bold">Listening</span> – You think you are a good listener? Perhaps, some of your co-workers say otherwise?
                             </p>
                         </div>
                     </div>
@@ -286,22 +285,22 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
                     <div class="row pt-3">
                         <div class="col-md-3">
                             <p>
-                                * collaboration – How do you encourage teamwork? How do you make sure that your team works in the flow and performs optimally? 
+                                <span class="text-uppercase font-weight-bold">Collaboration</span> – How do you encourage teamwork? How do you make sure that your team works in the flow and performs optimally? 
                             </p>
                         </div>
                         <div class="col-md-3">
                             <p>
-                                * behaviour styles – How to adapt to your interlocutor? Are you speaking the language that suits your partner? 
+                                <span class="text-uppercase font-weight-bold">Behaviour styles</span> – How to adapt to your interlocutor? Are you speaking the language that suits your partner? 
                             </p>
                         </div>
                         <div class="col-md-3">
                             <p>
-                                * accountability – How can you make the difference? How to initiate and encourage empowerment?
+                                <span class="text-uppercase font-weight-bold">Accountability</span> – How can you make the difference? How to initiate and encourage empowerment?
                             </p>
                         </div>
                         <div class="col-md-3">
                             <p>
-                                * priorities – Are you spending your time well? Do you take time to decide what is really important? 
+                                <span class="text-uppercase font-weight-bold">Priorities</span> – Are you spending your time well? Do you take time to decide what is really important? 
                             </p>
                         </div>
                     </div>
@@ -312,11 +311,46 @@ I’d love to tell you. You’ve come to the right address. Interested in a trai
     </div>
     
     </section> 
-    <!-- FORM (ultimate CTA) SECTION -->
 
-  
-    <!-- FOOTER -->
-<footer id="footer"></footer>
+        <!-- CALL TO ACTION SECTION -->
+        <section id="cta">
+            <h1 class="text-center cta-text">We build the training your business deserves</h1>
+            <div class="btn-section text-center">
+                <button class="btn btn-dark btn-lg btn-space">Contact</button>
+            </div>
+
+            <div class="center-content">
+            <div class="form-container">
+                <form action="">
+                    <!-- First name, Last name, email adress (required), message -->
+                    <div class="input-group">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <input type="email" placeholder="Email address*" required>
+                    <textarea name="message" rows="2" cols="20" placeholder="Message*" required></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        </section>
+        
+        <!-- FOOTER -->
+    
+        <section id="footer">
+            <div class="phone-mail text-center">
+                <h4><i class="fas fa-phone footer-icon"></i> 0032 477 12 43 56</h4>
+                <h4><i class="far fa-envelope footer-icon"></i> example@email.com</h4>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="fab fa-facebook-f footer-icon"></i>
+                <i class="fab fa-linkedin footer-icon"></i>
+                <i class="fab fa-twitter footer-icon"></i>
+            </div>
+            <div class="copyright text-center mb-3">
+                <h6>2020 &copy;MCode</h6>
+            </div>
+        </section>
    
    
    
