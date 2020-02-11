@@ -6,7 +6,19 @@ Dark Indigo: #304ffe rgb(48, 79, 254)
 
 BACKGROUND INDIGO: #677EFE
 
+Nieuwe form kleuren:
 
+border-radius: 50px;
+background: #3d5afe;
+box-shadow:  15px 15px 30px #344dda, 
+             -15px -15px 30px #4667ff;
+
+    --shadow-normal: 15px 15px 30px #344dda, 
+             -15px -15px 30px #4667ff;
+    --shadow-inset: inset 15px 15px 30px #344dda, 
+             inset -15px -15px 30px #4667ff;
+
+    --background-color: linear-gradient(145deg, #3d5afe, #3d5afe);
 
 
 ORIGINELE FORM KLEUREN
@@ -24,12 +36,12 @@ ORIGINELE FORM KLEUREN
 
 /*CSS VARIABLES*/
 :root {
-    --shadow-normal: .5rem .5rem 1.5rem #47498c,
-                                -.5rem -.5rem 1.5rem #5d5fb6;
-    --shadow-inset: inset .5rem .5rem 1.5rem #47498c,
-                                inset -.5rem -.5rem 1.5rem #5d5fb6;
+    --shadow-normal: 15px 15px 30px #344dda, 
+             -15px -15px 30px #4667ff;
+    --shadow-inset: inset 15px 15px 30px #344dda, 
+             inset -15px -15px 30px #4667ff;
 
-    --background-color: linear-gradient(145deg, #585aac, #4a4c91);
+    --background-color: linear-gradient(145deg, #3d5afe, #3d5afe);
 }
 
 /* ----------------------- */
