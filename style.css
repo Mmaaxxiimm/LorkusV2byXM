@@ -243,8 +243,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-        box-shadow: .5rem .5rem 1.5rem #47498c,
-    -.5rem -.5rem 1.5rem #5d5fb6;
+        box-shadow: var(--shadow-normal);
 }
 
 input::placeholder,
