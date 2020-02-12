@@ -300,6 +300,7 @@ textarea::placeholder {
 
 #footer {
     height: 200px;
+    text-decoration: none;
 }
 
 .footer-icon {
