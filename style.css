@@ -1,5 +1,6 @@
-/*COLORS*/
-/*
+/* ------------------------------------------ */
+/* COLORS
+
 LIGHT Indigo: #536dfe rgb(83, 109, 254) (equivalent van #5d5fb6)
 MEDIUM Indigo: #3d5afe rgb(61, 90, 254) (equivalent van #47498c)
 Dark Indigo: #304ffe rgb(48, 79, 254)
@@ -34,7 +35,8 @@ ORIGINELE FORM KLEUREN
 
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre&display=swap');
 
-/*CSS VARIABLES*/
+/* ------------------------------------------ */
+/* CSS VARIABLES */
 :root {
     --shadow-normal: 15px 15px 30px #344dda, 
              -15px -15px 30px #4667ff;
@@ -44,7 +46,7 @@ ORIGINELE FORM KLEUREN
     --background-color: linear-gradient(145deg, #3d5afe, #3d5afe);
 }
 
-/* ----------------------- */
+/* ------------------------------------------ */
 /* GLOBAL RESET */
 
 *,
@@ -74,7 +76,7 @@ section {
     
 }
 
-/* ------------ */
+/* ------------------------------------------ */
 /* NAVBAR */
 
 .navbar {
@@ -83,8 +85,8 @@ section {
     border-color: rgba(61, 90, 254, .9);
 }
 
-/* ------------ */
-/* HERO */
+/* ------------------------------------------ */
+/* HERO/MAIN MESSAGE SECTION */
 
 .hero {
     width: 100%;
@@ -119,12 +121,14 @@ section {
     margin: 1rem 0;
 }
 
+/* ------------------------------------------ */
+/* CTA BUTTON */
 .btn {
     background-color: #304ffe;
     border-radius: 2rem;
     color: #fafafa;
     display: inline-block;
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     padding: 1rem 2.5rem;
     text-transform: uppercase;
     transition: background-color 650ms;
@@ -136,11 +140,11 @@ section {
 
 }
 
-/* ----------------------- */
-/* NAME SECTION */
+/* ------------------------------------------ */
+/* ABOUT ME SECTION */
 
 
-/* ----------------------------------------- */
+/* ------------------------------------------ */
 /* NAVIGATION TABS: WHY b2B and HOW IT WORKS */
 
 .tabnav {
@@ -148,7 +152,22 @@ section {
     justify-content: space-around;
 }
 
-/* ------------- */
+.tabnav .nav-item {
+    border-radius: 5px;
+    color: #3d5afe;
+}
+
+.tabnav .nav-item:hover {
+    border-radius: 5px;
+    color: #304ffe;
+}
+
+.tabnav .nav-item .active {
+    border-radius: 5px;
+    background-color: #3d5afe;
+}
+
+/* ------------------------------------------ */
 /* OFFER SECTION */
 
 .heading-underline {
@@ -240,12 +259,12 @@ textarea {
     margin-bottom: 1.5rem;
     outline: none;
 }
-
+/*
 input:focus,
 textarea:focus {
         box-shadow: var(--shadow-normal);
 }
-
+*/
 input::placeholder,
 textarea::placeholder {
     color: #ddd;
@@ -254,11 +273,11 @@ textarea::placeholder {
 .center-content .form-container .input-group {
     display: flex;
 }
-
+/*
 .input-group input:first-child {
     margin-right: 3.5rem;
 }
-
+*/
 .button {
     width: 100%;
     display: block;
@@ -281,7 +300,8 @@ textarea::placeholder {
     box-shadow: var(--shadow-inset);
 }
 
-/*Form media queries*/
+/* ------------------------------------------ */
+/*FORM MEDIA QUERIES*/
 
 @media screen and (max-width: 600px) {
     .input-group {
@@ -294,7 +314,7 @@ textarea::placeholder {
 }
 
 
-/* ------ */
+/* ------------------------------------------ */
 /* FOOTER */
 
 #footer {
@@ -307,6 +327,34 @@ textarea::placeholder {
     color: #3d5afe;
     padding: 5% 3%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
